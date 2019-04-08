@@ -100,3 +100,19 @@ $biereFrance = array(
           "caisse" => "30€",
           "fut" => "100€")
     );
+?>
+CREATE TABLE articles (
+id int auto_increment not null,
+titre varchar(100) not null,
+prix int not null,
+image text not null,
+descriptif text not null,
+note varchar(20) not null,
+gout varchar(20) not null,
+amertume varchar(20) not null,
+degres int not null,
+prixunitaire int not null,
+prixcaisse int not null,
+prixfut int not null,
+primary key(id) 
+);
